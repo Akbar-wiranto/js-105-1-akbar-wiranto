@@ -1,0 +1,30 @@
+<div id="app">
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>Konversi Mata Uang</title>
+  </head>
+  <body>
+  
+  <h2>Konversi Mata Uang</h2>
+  
+  <form>
+    Masukkan jumlah rupiah:
+    <input type="number" id="rupiah">
+  </form> 
+  
+  <button type="button" onclick="convert()">Konversi</button>
+  
+  <p>Jumlah dalam dolar: <span id="output"></span></p>
+  
+  <script>
+  function convert() {
+    var rupiah = document.getElementById("rupiah").value;
+    var output = (rupiah/14.591).toFixed(2);
+    document.getElementById("output").innerHTML = output;
+  }
+  </script>
+  
+  </body>
+  </html>
+</div>
